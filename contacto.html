@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean Lifes - Contacto</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Poppins Font (as requested in original file) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a2b1c3b1a7.js" crossorigin="anonymous"></script>
+  
+  <style>
+    /* Custom font configuration */
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Custom scrollbar style for better aesthetics */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #0d9488;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-teal-50">
+
+  <!-- Encabezado / Navbar -->
+  <header class="bg-cyan-700 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row items-center justify-between">
+      <!-- Logo and Search Container -->
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <!-- Logo -->
+        <div class="logo flex-shrink-0">
+          <img src="ChatGPT Image 8 nov 2025, 12_36_12 a.m..png" alt="Clean Lifes Logo" class="h-10 w-10 md:h-12 md:w-12 rounded-full ring-2 ring-white">
+        </div>
+        
+        <!-- Search Container (Mobile/Tablet Hidden, Desktop Visible) -->
+        <div class="search-container ml-6 relative hidden md:block">
+          <input type="text" placeholder="Buscar..." class="py-2 pl-4 pr-10 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-300 w-64 text-sm">
+          <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- Enlaces de Navegación: Eliminado el enlace "Novedades" -->
+      <nav class="nav-links mt-4 md:mt-0 flex flex-wrap justify-center md:justify-end space-x-4 text-sm md:text-base">
+        <!-- ENLACES ACTUALIZADOS: Aseguran la navegación a los archivos HTML correspondientes -->
+        <a href="index.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Home</a>
+        <a href="servicios.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Servicios</a>
+        <a href="contacto.html" class="font-bold text-amber-300 border-b-2 border-amber-300 p-2 rounded-md">Contacto</a>
+        <a href="nosotros.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Nosotros</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de Contacto (Main Content) -->
+  <main class="contact-section flex-grow py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+    <div class="bg-white p-6 md:p-12 rounded-xl max-w-5xl w-full grid grid-cols-1 lg:grid-cols-3 gap-8 shadow-2xl">
+      
+      <!-- Lado del Logo / Información de Contacto -->
+      <div class="logo-side bg-cyan-600 text-white p-8 rounded-lg flex flex-col justify-center items-center lg:col-span-1">
+        <h2 class="text-3xl font-bold mb-6 text-center">¡Hablemos de limpieza!</h2>
+        <img src="ChatGPT Image 8 nov 2025, 12_36_12 a.m..png" alt="Clean Lifes Logo" class="h-32 w-32 rounded-full mb-8 ring-4 ring-amber-300">
+        <p class="text-center mb-4"><i class="fas fa-envelope mr-2 text-amber-300"></i> limpioyreluciente@gmail.com</p>
+        <p class="text-center mb-6"><i class="fas fa-phone-alt mr-2 text-amber-300"></i> +56 9 1234 5678</p>
+        <p class="text-sm opacity-90">Completa el formulario y nos pondremos en contacto contigo lo antes posible para organizar tu servicio.</p>
+      </div>
+
+      <!-- Formulario de Contacto -->
+      <form class="contact-form lg:col-span-2 space-y-4">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contacto</h3>
+        
+        <div class="form-grid grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <!-- Nombre -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Nombre</label>
+            <input type="text" placeholder="Nombre" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+          </div>
+          
+          <!-- Tipo de servicio -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Tipo de servicio</label>
+            <input type="text" placeholder="Ej: Limpieza hogar" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+          </div>
+          
+          <!-- Apellido -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Apellido</label>
+            <input type="text" placeholder="Apellido" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+          </div>
+          
+          <!-- Dirección -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Dirección</label>
+            <input type="text" placeholder="Dirección" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+          </div>
+          
+          <!-- Correo -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Correo</label>
+            <input type="email" placeholder="Correo electrónico" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+          </div>
+          
+          <!-- Número -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Número</label>
+            <input type="text" placeholder="Teléfono" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+          </div>
+        </div>
+
+        <!-- Mensaje -->
+        <label class="block text-sm font-medium text-gray-700 pt-2">Mensaje</label>
+        <textarea placeholder="Escribe tu mensaje..." rows="4" class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-cyan-500 focus:border-cyan-500"></textarea>
+
+        <!-- Botón Enviar -->
+        <button type="submit" class="btn-enviar w-full px-6 py-3 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600 transition-colors focus:outline-none focus:ring-4 focus:ring-teal-500 focus:ring-opacity-50 mt-4">
+          Enviar Solicitud
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer bg-cyan-700 text-white py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+      <!-- Información de contacto -->
+      <div class="footer-info space-y-2 mb-4 md:mb-0 text-sm flex items-center justify-center md:justify-start">
+        <img src="ChatGPT Image 8 nov 2025, 12_36_12 a.m..png" alt="Clean Lifes Logo" class="h-10 w-10 md:h-12 md:w-12 rounded-full ring-2 ring-white mr-4">
+        <div>
+          <p><i class="fas fa-envelope text-amber-300 mr-2"></i> Correo: limpioyreluciente@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt text-amber-300 mr-2"></i> Ubicación: avenida siempre limpia 123 N</p>
+        </div>
+      </div>
+      
+      <!-- Iconos sociales -->
+      <div class="footer-icons flex space-x-6 text-xl">
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Usamos Poppins del nuevo HTML */
+}
+
+/* CORRECCIÓN: Sticky Footer para forzar el footer al final de la página */
+html, body {
+    height: 100%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organiza header, main y footer verticalmente */
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+/* El contenido principal debe crecer para empujar el footer hacia abajo */
+.main-section, #page-content, .hero-section, .contact-section {
+    flex-grow: 1; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --- ENCABEZADO (NAVBAR) --- */
+.navbar {
+    background-color: #00adef; /* Azul claro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 5%;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .logo img {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 4px;
+    width: 150px;
+    background: none;
+}
+
+.search-container .fa-search {
+    color: #333;
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+/* --- SECCIÓN CONTACTO (MAIN) --- */
+.contact-section {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 80vh; 
+    position: relative;
+}
+
+/* El título 'Contacto' flotando sobre el fondo */
+.contact-section h2 {
+    position: absolute;
+    top: 5%;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.1); /* Texto sutil */
+    z-index: 1;
+}
+
+/* La caja Turquesa flotante con el formulario */
+.form-card {
+    background-color: #5fd9c8; /* Turquesa */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 950px; 
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    z-index: 5; /* Asegura que esté sobre el fondo */
+    padding: 20px;
+}
+
+/* Lado Izquierdo: Logo */
+.logo-side {
+    flex: 0 0 30%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-side img {
+    max-width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: white;
+    /* Efecto de borde del diseño */
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Lado Derecho: Formulario */
+.contact-form {
+    flex: 1; 
+    padding: 10px 20px 10px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-grid > div {
+    flex: 0 0 calc(50% - 7.5px); /* Dos columnas */
+}
+
+.contact-form label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #d8b7a5; /* Color marrón claro/beige del diseño */
+    color: #333;
+}
+
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    align-self: flex-end; /* Botón a la derecha */
+    background-color: #925c43; /* Color marrón oscuro del botón 'Enviar' */
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+.footer {
+    background-color: #00adef; /* Azul claro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 5%;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    color: black;
+}
+
+.footer-icons i {
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+    .form-card {
+        flex-direction: column; 
+        padding: 30px;
+    }
+    
+    .logo-side {
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 0;
+    }
+    
+    .form-grid > div {
+        flex: 0 0 100%; /* Una columna en móvil */
+    }
+
+    .btn-enviar {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .search-container {
+        order: 3; /* Mueve la barra de búsqueda al final */
+    }
+    
+    .nav-links {
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .nav-links a {
+        margin: 5px 5px;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

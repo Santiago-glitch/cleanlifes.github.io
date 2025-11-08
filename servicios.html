@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean Lifes - Servicios</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a2b1c3b1a7.js" crossorigin="anonymous"></script>
+  
+  <style>
+    /* Custom font configuration */
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Custom scrollbar style for better aesthetics */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #0d9488;
+      border-radius: 10px;
+    }
+
+    /* Fondo de las tarjetas (Verde Aguamarina claro, similar al de la imagen) */
+    .card-content-bg {
+      background-color: #4dc2c2; 
+    }
+
+    /* Fondo general sutil, un gradiente marrón-gris como el fondo de las tarjetas en la imagen */
+    .services-main-bg {
+      background-image: linear-gradient(to bottom, #d6d3d1, #a8a29e); 
+    }
+
+    /* Estilo del botón */
+    .card-button {
+      background-color: #0d9488; /* Verde/Cian más oscuro para el contraste */
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .card-button:hover {
+      background-color: #0f766e; 
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-teal-50">
+
+  <!-- Encabezado / Navbar -->
+  <header class="bg-cyan-700 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row items-center justify-between">
+      <!-- Logo y Contenedor de Búsqueda -->
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <!-- Logo -->
+        <div class="logo flex-shrink-0">
+          <img src="ChatGPT Image 8 nov 2025, 12_36_12 a.m..png" alt="Clean Lifes Logo" class="h-10 w-10 md:h-12 md:w-12 rounded-full ring-2 ring-white">
+        </div>
+        
+        <!-- Contenedor de Búsqueda (Mobile/Tablet Oculto, Desktop Visible) -->
+        <div class="search-container ml-6 relative hidden md:block">
+          <input type="text" placeholder="Buscar..." class="py-2 pl-4 pr-10 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-300 w-64 text-sm">
+          <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- Enlaces de Navegación -->
+      <nav class="nav-links mt-4 md:mt-0 flex flex-wrap justify-center md:justify-end space-x-4 text-sm md:text-base">
+        <a href="index.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Home</a>
+        <!-- Servicios Link Highlighted -->
+        <a href="servicios.html" class="font-bold text-amber-300 border-b-2 border-amber-300 p-2 rounded-md">Servicios</a>
+        <a href="contacto.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Contacto</a>
+        <a href="nosotros.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Nosotros</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido Principal (Servicios Cards) -->
+  <main class="services-main-bg flex-grow py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Tarjeta 1: Habilidades -->
+        <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+          <img src="https://www.tiselab.com/homepage/wp-content/uploads/2023/06/Foto-post.jpg" alt="Personal con equipo de protección limpiando" class="w-full h-56 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/155E75/ffffff?text=HABILIDADES';">
+          <div class="card-content-bg p-6 text-white text-center flex flex-col justify-between h-[200px] rounded-b-xl">
+            <p class="text-xl font-medium mb-4 leading-relaxed">
+              Cuidado, confianza, higiene y perfección a la hora de realizar nuestro trabajo
+            </p>
+            <a href="contacto.html" class="card-button text-white px-6 py-3 rounded-lg block">
+              Habilidades
+            </a>
+          </div>
+        </div>
+        
+        <!-- Tarjeta 2: Herramientas -->
+        <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDIRKV1O2r4FbYJ6f-iPLa11OaaEMButVSALcRJCRCYBlEtbWp" alt="Herramientas y productos de limpieza ecológicos" class="w-full h-56 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/2DD4BF/ffffff?text=HERRAMIENTAS';">
+          <div class="card-content-bg p-6 text-white text-center flex flex-col justify-between h-[200px] rounded-b-xl">
+            <p class="text-xl font-medium mb-4 leading-relaxed">
+              Herramientas totalmente profesionales y totalmente ecológicas
+            </p>
+            <a href="contacto.html" class="card-button text-white px-6 py-3 rounded-lg block">
+              Herramientas
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Resultados -->
+        <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+          <img src="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/344966ea-c869-4c21-a2a1-72e13f33538a?rule=hw396_70" alt="Antes y después de un espacio limpio" class="w-full h-56 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/06B6D4/ffffff?text=RESULTADOS';">
+          <div class="card-content-bg p-6 text-white text-center flex flex-col justify-between h-[200px] rounded-b-xl">
+            <p class="text-xl font-medium mb-4 leading-relaxed">
+              Resultados eficaces: cambio totalmente notable e inmejorable
+            </p>
+            <a href="contacto.html" class="card-button text-white px-6 py-3 rounded-lg block">
+              Resultados
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Placeholder de botones/círculos en el fondo, como en la imagen -->
+      <div class="flex justify-around mt-8 opacity-50">
+        <div class="w-8 h-8 bg-amber-700 rounded-full shadow-lg"></div>
+        <div class="w-8 h-8 bg-amber-700 rounded-full shadow-lg"></div>
+        <div class="w-8 h-8 bg-amber-700 rounded-full shadow-lg"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Pie de página (Actualizado al fondo cian/cyan-700 para coherencia) -->
+  <footer class="footer bg-cyan-700 text-white py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+      <!-- Información de contacto -->
+      <div class="footer-info space-y-2 mb-4 md:mb-0 text-sm flex items-center justify-center md:justify-start">
+        <img src="ChatGPT Image 8 nov 2025, 12_36_12 a.m..png" alt="Clean Lifes Logo" class="h-10 w-10 md:h-12 md:w-12 rounded-full ring-2 ring-white mr-4">
+        <div>
+          <p><i class="fas fa-envelope text-amber-300 mr-2"></i> Correo: limpioyreluciente@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt text-amber-300 mr-2"></i> Ubicación: avenida siempre limpia 123 N</p>
+        </div>
+      </div>
+      
+      <!-- Iconos sociales -->
+      <div class="footer-icons flex space-x-6 text-xl">
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
