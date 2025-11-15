@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean Lifes - Nosotros</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a2b1c3b1a7.js" crossorigin="anonymous"></script>
+  
+  <style>
+    /* Custom font configuration */
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Custom scrollbar style for better aesthetics */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #0d9488;
+      border-radius: 10px;
+    }
+    
+    /* Estilo para la sección hero con la nueva imagen de fondo */
+    .hero-nosotros {
+      background-image: url('nosotros2.jpg'); /* Placeholder para la imagen de limpieza */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+      min-height: 450px; 
+      background-position: center 35%;
+    }
+
+    /* Overlay oscuro para mejorar la legibilidad del texto */
+    .hero-nosotros::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4); /* Capa oscura semitransparente */
+    }
+
+    /* Estilo para el texto principal de la cita */
+    .quote-text {
+      position: relative;
+      z-index: 10;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+
+    /* Color de fondo del bloque de contenido principal (verde aguamarina) */
+    .content-block-bg {
+      background-color: #4dc2c2; /* Un tono de verde/cian claro similar al de la imagen */
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-teal-50">
+
+  <!-- Encabezado / Navbar -->
+  <header class="bg-cyan-500 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row items-center justify-between">
+      <!-- Logo y Contenedor de Búsqueda -->
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <!-- Logo -->
+        <div class="logo flex-shrink-0">
+          <img src="ChatGPT Image 8 nov 2025, 12_36_12 a.m..png" alt="Clean Lifes Logo" class="h-10 w-10 md:h-12 md:w-12 rounded-full ring-2 ring-white">
+        </div>
+        
+        <!-- Contenedor de Búsqueda (Mobile/Tablet Oculto, Desktop Visible) -->
+        <div class="search-container ml-6 relative hidden md:block">
+          <input type="text" placeholder="Buscar..." class="py-2 pl-4 pr-10 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-300 w-64 text-sm">
+          <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- Enlaces de Navegación (Se eliminó "Novedades") -->
+      <nav class="nav-links mt-4 md:mt-0 flex flex-wrap justify-center md:justify-end space-x-4 text-sm md:text-base">
+        <a href="index.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Home</a>
+        <a href="servicios.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Servicios</a>
+        <!-- <a href="#" class="hover:text-amber-300 transition-colors p-2 rounded-md">Novedades</a> <-- ELIMINADO -->
+        <a href="contacto.html" class="hover:text-amber-300 transition-colors p-2 rounded-md">Contacto</a>
+        <!-- Nosotros Link Highlighted -->
+        <a href="nosotros.html" class="font-bold text-amber-300 border-b-2 border-amber-300 p-2 rounded-md">Nosotros</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido Principal (Sections) -->
+  <main class="flex-grow flex flex-col">
+    
+    <!-- Hero Section con Cita -->
+    <section class="hero-nosotros flex-grow flex items-center justify-center p-8 min-h-[40vh] md:min-h-[50vh]">
+      <div class="quote-text text-center max-w-2xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-semibold italic text-white">
+          “La limpieza es el primer paso hacia la felicidad.”
+        </h1>
+      </div>
+    </section>
+
+    <!-- Bloque de Contenido Principal -->
+    <section class="content-block-bg py-16 px-4 sm:px-6 lg:px-8 text-white">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-8">
+        
+        <!-- Logo en Círculo (Simulando la imagen proporcionada) -->
+        <div class="flex-shrink-0 w-48 h-48 bg-white rounded-full flex items-center justify-center p-2 shadow-xl">
+          <!-- Este es un placeholder simple para el logo, usando texto -->
+          <div class="align-center">
+            <img src="ChatGPT Image 8 nov 2025, 12_36_12 a.m..png" alt="Clean Lifes Logo" class="h-32 w-32 rounded-full mb-8 ">
+          </div>
+        </div>
+        
+        <!-- Texto de Reflexión -->
+        <div class="text-lg lg:text-xl font-medium leading-relaxed">
+          <p>
+            «El orden en la casa es un reflejo del orden en tu mente.» Esta frase nos invita a reflexionar sobre cómo el estado de nuestra casa puede influir en nuestra paz mental. Mantener un hogar ordenado puede ayudarnos a mantener claridad y tranquilidad en nuestras mentes. «La limpieza no es una tarea, es un estilo de vida.» nos recuerda que la limpieza y el orden no deben ser vistos como una carga, sino como una forma de vida. Al convertirlo en un hábito, nos resultará más fácil mantener nuestro hogar impecable.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer bg-cyan-500 text-white py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+      <!-- Logo e Información de contacto -->
+      <div class="footer-info space-y-2 mb-4 md:mb-0 text-sm flex items-center justify-center md:justify-start">
+        <img src="ChatGPT Image 8 nov 2025, 12_36_12 a.m..png" alt="Clean Lifes Logo" class="h-10 w-10 md:h-12 md:w-12 rounded-full ring-2 ring-white mr-4">
+        <div>
+          <p><i class="fas fa-envelope text-amber-300 mr-2"></i> Correo: limpioyreluciente@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt text-amber-300 mr-2"></i> Ubicación: avenida siempre limpia 123 N</p>
+        </div>
+      </div>
+      
+      <!-- Iconos sociales -->
+      <div class="footer-icons flex space-x-6 text-xl">
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-amber-300 transition-colors"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
